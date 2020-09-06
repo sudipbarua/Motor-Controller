@@ -11,6 +11,10 @@ The PWM Generator is divided into further three components.
 * [PWM-Controller]( https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator/PWM-Controller)
 * [Signal Generator](https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator/Signal-Generator)
 
+![Block Diagram of PWM Generator](https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/PWM_Generator.JPG)
+
+          Fig: Block diagram of PWM Generator.
+
 ###  [Serial Paraller Interface]( https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/Serial-Parallel-Interface/spi.vhd):
 This component takes serial data and converts it into parallel data, from which the last 2bits are transferred as the register number (reg_nr), the 14th bit is register write enable (regwrite_n) and the 1st 14 bits are used as regcontent signal that is used to calculate the base period and duty cycle in the [PWM-Controller]( https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/PWM-Controller/pwm_controller.vhd) component. 
 
