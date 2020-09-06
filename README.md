@@ -44,7 +44,9 @@ The switching logics are as follows-
 | nSLEEP | IN1 | IN2 | Out1 | Out2 | Function |
 |--------|-----|-----|------|------|----------|
 |    0   |  X  |  X  |   Z  |  Z   |  Coast   |
-|    1   |    0   |    0   |     Z     |     Z     |      Coast    |
-|    1   |    1   |    0   |     H     |     L     | Forward |
-|       1      |    0   |    1   |     L     |     H     | Reverse |
-|       1      |    1   |    1   |     L     |     L     |   Brake   |
+|    1   |  0  |  0  |   Z  |  Z   |  Coast   |
+|    1   |  1  |  0  |   H  |  L   | Forward  |
+|    1   |  0  |  1  |   L  |  H   | Reverse  |
+|    1   |  1  |  1  |   L  |  L   |   Brake  |
+
+Finally both the digital and analog parts were integrated into the [Top Level Design of the Motor Controller](https://github.com/sudipbarua/Motor-Controller/blob/master/Top_Level_Design_motorcontroller.vhd) and simulated using [Testbench of the top level design](https://github.com/sudipbarua/Motor-Controller/blob/master/tb_Top_Level_Design_motorcontroller.vhd). 
