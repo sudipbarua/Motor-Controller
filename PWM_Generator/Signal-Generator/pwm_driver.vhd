@@ -49,7 +49,7 @@ begin
             end if;
         end if;
         
-        if pwm_control(2) = '1' then
+        if pwm_control(2) = '1' then          #Brake
                pwm_n_sleep <= '1';
                pwm_out1 <= '1';
                pwm_out2 <= '1';
@@ -60,11 +60,11 @@ begin
                 pwm_n_sleep <= '0'; 
             
             else
-                if pwm_control(1) = '0' then
+                if pwm_control(1) = '0' then       #Forward drive
                    pwm_n_sleep <= '1';
                    pwm_out1 <= pwm_out;
                    pwm_out2 <= pwm_out;
-                elsif pwm_control(1) = '1' then
+                elsif pwm_control(1) = '1' then     #Revarse drive
                    pwm_n_sleep <= '1';
                    pwm_out1 <= pwm_out;
                    pwm_out2 <= not pwm_out;
