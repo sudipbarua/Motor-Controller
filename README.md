@@ -25,3 +25,8 @@ This component, named PWM-Driver in the diagram, has 3 outputs.
 
 Finally all the 3 digital components are integrated in a [Top Level Design ](https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/pwm_digital_top.vhd) that takes serial data as input and generates PWM signal. 
 
+## [Motor Controller](https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/motorcontroller.vhd) [TI DRV 8837] (https://www.ti.com/product/DRV8837): 
+Here a simple implementation of DRV 8837 is done. 
+![Block Diagram of DRV 8837](https://www.ti.com/ds_dgm/images/fbd_slvsba4e.gif)
+
+A the MOSFETs  
