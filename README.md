@@ -38,6 +38,7 @@ Here a simple implementation of DRV 8837 is done.
 * Thermal voltage 25 mV 
 * Saturation current 1 nA 
 * Ideality factor 1.1 
+
 The switching logics are as follows-
 
 | nSLEEP | IN1 | IN2 | Out1 | Out2 | Function |
