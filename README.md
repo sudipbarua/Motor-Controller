@@ -25,12 +25,24 @@ This component, named PWM-Driver in the diagram, has 3 outputs.
 
 Finally all the 3 digital components are integrated in a [Top Level Design ](https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/pwm_digital_top.vhd) that takes serial data as input and generates PWM signal. 
 
-## [Motor Controller](https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/motorcontroller.vhd) [TI DRV 8837](https://www.ti.com/product/DRV8837): 
-Here a simple implementation of DRV 8837 is done. 
+## [Motor Driver](https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/motordriver.vhd) [TI DRV 8837](https://www.ti.com/product/DRV8837): 
 
+Here a simple implementation of DRV 8837 is done.
 
 ![Block Diagram of DRV 8837](https://www.ti.com/ds_dgm/images/fbd_slvsba4e.gif)
 
-Fig: DRV8837 block diagram.
+          Fig: DRV8837 block diagram.
 
-A the MOSFETs  
+* A [switching resistor]( https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/sw_resistor.vhd) is used as the MOSFETs. 
+* Parameters of the simple [diodes]( https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/diode.vhd) as are: 
+* Thermal voltage 25 mV 
+* Saturation current 1 nA 
+* Ideality factor 1.1 
+The switching logics are as follows-
+| nSLEEP | IN1 | IN2 | Out1 | Out2 | Function |
+|----------|-------|-------|---------|---------|---------------|
+|       0      |    X   |    X   |     Z     |     Z     |      Coast    |
+|       1      |    0   |    0   |     Z     |     Z     |      Coast    |
+|       1      |    1   |    0   |     H     |     L     | Forward |
+|       1      |    0   |    1   |     L     |     H     | Reverse |
+|       1      |    1   |    1   |     L     |     L     |   Brake   |
