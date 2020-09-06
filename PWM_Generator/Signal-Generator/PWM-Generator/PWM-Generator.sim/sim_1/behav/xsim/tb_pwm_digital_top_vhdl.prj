@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../lab-1/pwm_controller.vhd" \
+"../../../../../pwm_digital_top.vhd" \
+"../../../../Lab-3.srcs/sources_1/new/pwm_driver_v2-with-case.vhd" \
+"../../../../../../lab-2/spi.vhd" \
+"../../../../../tb_pwm_digital_top.vhd" \
+
+# Do not sort compile order
+nosort

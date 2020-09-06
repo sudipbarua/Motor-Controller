@@ -1,0 +1,19 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0b97abf4f3074ae9a215a0c276409b18 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_digital_top_behav xil_defaultlib.tb_pwm_digital_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture rtl of entity xil_defaultlib.PWM_controller_E [pwm_controller_e_default]
+Compiling architecture rtl of entity xil_defaultlib.PWM_driver_E [pwm_driver_e_default]
+Compiling architecture struct of entity xil_defaultlib.PWM_digital_top_E [pwm_digital_top_e_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_digital_top
+Built simulation snapshot tb_pwm_digital_top_behav

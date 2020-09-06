@@ -1,0 +1,407 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun 17 22:58:34 2020
+# Process ID: 14708
+# Current directory: D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18948 D:\MS_TUC\My files\S 2\DHS\Lab\lab-2\Lab-2\Lab-2.xpr
+# Log file: D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/vivado.log
+# Journal file: D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd, line 51. Unresolved signal "count" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd, line 51. Unresolved signal "count" is multiply driven.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/MS_TUC/My -notrace
+couldn't read file "D:/MS_TUC/My": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 23:06:40 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_pwm_spi_behav -key {Behavioral:sim_1:Functional:tb_pwm_spi} -tclbatch {tb_pwm_spi.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_pwm_spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pwm_spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 823.961 ; gain = 35.324
+run 200 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 824.492 ; gain = 0.000
+run 200 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 824.492 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 849.949 ; gain = 0.000
+run 200 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 854.445 ; gain = 0.000
+run 200 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 902.184 ; gain = 0.000
+run 200 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_spi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-2/Lab-2/Lab-2.sim/sim_1/behav/xsim'
+"xelab -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 89ea1252dd9d4a7c8cae1839e9df8d51 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_spi_behav xil_defaultlib.tb_pwm_spi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.SPI [spi_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_pwm_spi
+Built simulation snapshot tb_pwm_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 902.184 ; gain = 0.000
+run 200 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project {D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/Lab-3/Lab-3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  {{D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/tb_pwm_driver.vhd}}]
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  {{D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/pwm_driver.vhd}}]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/pwm_driver.vhd}}]
+set_property is_enabled false [get_files  {{D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/tb_pwm_digital_top.vhd}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/pwm_digital_top.vhd}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/Lab-3/Lab-3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_driver' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/Lab-3/Lab-3.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_pwm_driver_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/Lab-3/Lab-3.sim/sim_1/behav/xsim'
+"xelab -wto 0b97abf4f3074ae9a215a0c276409b18 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_driver_behav xil_defaultlib.tb_pwm_driver -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0b97abf4f3074ae9a215a0c276409b18 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_pwm_driver_behav xil_defaultlib.tb_pwm_driver -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/MS_TUC/My files/S 2/DHS/Lab/lab-3/Lab-3/Lab-3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_pwm_driver_behav -key {Behavioral:sim_1:Functional:tb_pwm_driver} -tclbatch {tb_pwm_driver.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_pwm_driver.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pwm_driver_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 910.273 ; gain = 0.000
+run 200 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 910.273 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 18 02:15:47 2020...
