@@ -63,10 +63,7 @@ component PWM_driver_E
     pwm_cycle_done                  : out std_logic;  -- new values at inputs are now used
     pwm_out1, pwm_out2, pwm_n_sleep : out std_logic);
 end component PWM_driver_E;
---ADD NECESSARY SIGNALS
---signal    reset_n_s         :   std_logic;
---signal    clk_s             :   std_logic;
--- from SPI controller
+
 signal    new_data_s        :   std_logic;    -- new data available
 signal    regnr_s           :   std_logic_vector (address_length-1 downto 0);  -- register address
 signal    regcontent_s      :   std_logic_vector (pwm_bit-1 downto 0);  -- register write value
@@ -77,12 +74,6 @@ signal    pwm_control_s     :   std_logic_vector(7 downto 0);
 signal    pwm_base_period_s :   integer range 0 to 2**(pwm_bit)-1;
 signal    pwm_duty_cycle_s  :   integer range 0 to 2**(pwm_bit)-1;
 
--- SPI input interfaces
---signal    sclk_s            :  std_logic;
---signal    cs_n_s            :  std_logic;
---signal    din_s             :  std_logic;
--- PWM output
---signal    pwm_out1_s, pwm_out2_s, pwm_n_sleep_s :  std_logic;
 
 begin
 
