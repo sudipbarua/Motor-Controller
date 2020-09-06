@@ -31,5 +31,6 @@ Here a simple implementation of DRV 8837 is done.
 
 ![Block Diagram of DRV 8837](https://www.ti.com/ds_dgm/images/fbd_slvsba4e.gif)
 
+Fig: DRV8837 block diagram.
 
 A the MOSFETs  
