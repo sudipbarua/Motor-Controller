@@ -39,10 +39,11 @@ Here a simple implementation of DRV 8837 is done.
 * Saturation current 1 nA 
 * Ideality factor 1.1 
 The switching logics are as follows-
+
 | nSLEEP | IN1 | IN2 | Out1 | Out2 | Function |
-|----------|-------|-------|---------|---------|---------------|
-|       0      |    X   |    X   |     Z     |     Z     |      Coast    |
-|       1      |    0   |    0   |     Z     |     Z     |      Coast    |
-|       1      |    1   |    0   |     H     |     L     | Forward |
+|--------|-----|-----|------|------|----------|
+|    0   |  X  |  X  |   Z  |  Z   |  Coast   |
+|    1   |    0   |    0   |     Z     |     Z     |      Coast    |
+|    1   |    1   |    0   |     H     |     L     | Forward |
 |       1      |    0   |    1   |     L     |     H     | Reverse |
 |       1      |    1   |    1   |     L     |     L     |   Brake   |
