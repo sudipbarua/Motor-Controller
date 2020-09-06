@@ -17,7 +17,7 @@ This component takes serial data and converts it into parallel data, from which 
 A state machine is used to design for starting new cycle, fetching data, write to output and end spi operation states which is clocked by the main system clock. Another clock for SPI fetch/read operation was used which is synchronous with the main clock. 
 ### [PWM-Controller]( https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/PWM-Controller/pwm_controller.vhd): 
 In this component, the regcontent bit stream received from SPI is converted into Base period and Duty cycle values of the PWM output signal when the reg_nr value is 01 and 10 respectively. Additionally, it generates a control signal for motor-drive from regcontent when the value of reg_nr is 11. 
-### [Signal Generator] (https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator/Signal-Generator): 
+### [Signal Generator](https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator/Signal-Generator): 
 This component, named PWM-Driver in the diagram, has 3 outputs. 
 1.	*pwm_out1*: Drives the motor to forward direction. If the 2nd bit of the control signal from [PWM-Controller]( https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/PWM-Controller/pwm_controller.vhd) is ‘0’, forward operation is active. 
 2.	*pwm_out2*: Drives the motor to reverse direction. If the 2nd bit of the control signal from [PWM-Controller]( https://github.com/sudipbarua/Motor-Controller/blob/master/PWM_Generator/PWM-Controller/pwm_controller.vhd) is ‘1’, reverse operation is active.
