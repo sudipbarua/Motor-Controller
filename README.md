@@ -35,9 +35,10 @@ Here a simple implementation of DRV 8837 is done.
 
 * A [switching resistor]( https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/sw_resistor.vhd) is used as the MOSFETs. 
 * Parameters of the simple [diodes]( https://github.com/sudipbarua/Motor-Controller/blob/master/Analog-Driver_TI-DRV-8837/diode.vhd) as are: 
-          * Thermal voltage 25 mV 
-          * Saturation current 1 nA 
-          * Ideality factor 1.1 
+    
+    * Thermal voltage 25 mV
+    * Saturation current 1 nA
+    * Ideality factor 1.1 
 
 The switching logics are as follows-
 
