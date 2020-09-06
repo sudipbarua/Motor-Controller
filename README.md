@@ -4,7 +4,7 @@ In this project a DC motor controller was developed that generates PWM signal fr
 * Design of a PWM Generator (Digital part) using VHDL
 * Implementation of motor-controller [TI DRV 8837](https://www.ti.com/product/DRV8837) using VHDL-AMS (Analog part)
 
-## PWM Generator: 
+## [PWM Generator](https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator): 
 
 The PWM Generator is divided into further three components.
 * [Serial Paraller Interface](https://github.com/sudipbarua/Motor-Controller/tree/master/PWM_Generator/Serial-Parallel-Interface)
